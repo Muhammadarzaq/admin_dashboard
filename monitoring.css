@@ -1,0 +1,49 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+.aside{
+  box-shadow: 4px 0px 6px rgba(0, 0, 0, 0.1); 
+}
+
+body > div.wrapper > aside > div > div.os-padding > div > div > div{
+  border-bottom: none;
+}
+
+ .nav-link {
+    position: relative;
+    display: inline-block;
+  }
+
+  body > div.wrapper > aside > div > div.os-padding > div > div > nav > ul > li>a::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 5px;
+    height: 100%;
+    background-color: blue; /* Ganti dengan warna yang diinginkan */
+    z-index: -1; /* Mengirim pseudo-element ke belakang elemen i */
+  }
+
+  /* {
+
+  } */
+  @media (min-width: 1024px) {
+    body > div.wrapper > nav > ul > li:nth-child(1){
+        display: none;
+    }
+  }
+
+
+  .nav-link i {
+    margin-right: 10px; /* Memberikan jarak antara pseudo-element dan ikon */
+  }
+  .nav-link:hover {
+    background-color: transparent; /* Tetap atur warna latar belakang ke transparan saat dihover */
+  }
+
+  body > div.wrapper > aside > div > div.os-padding > div > div > nav > ul > li > :hover{
+    font-weight: bold;
+  }

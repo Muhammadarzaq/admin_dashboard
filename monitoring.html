@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>AdminLTE 3 | Dashboard</title>
+
+    <!-- Google Font: Source Sans Pro -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="plugins/fontawesome-free/css/all.min.css">
+    <!-- Ionicons -->
+    <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <!-- Tempusdominus Bootstrap 4 -->
+    <link rel="stylesheet" href="plugins/tempusdominus-bootstrap-4/css/tempusdominus-bootstrap-4.min.css">
+    <!-- iCheck -->
+    <link rel="stylesheet" href="plugins/icheck-bootstrap/icheck-bootstrap.min.css">
+    <!-- JQVMap -->
+    <link rel="stylesheet" href="plugins/jqvmap/jqvmap.min.css">
+    <!-- Theme style -->
+    <link rel="stylesheet" href="dist/css/adminlte.min.css">
+    <!-- overlayScrollbars -->
+    <link rel="stylesheet" href="plugins/overlayScrollbars/css/OverlayScrollbars.min.css">
+    <!-- Daterange picker -->
+    <link rel="stylesheet" href="plugins/daterangepicker/daterangepicker.css">
+    <!-- summernote -->
+    <link rel="stylesheet" href="plugins/summernote/
+    summernote-bs4.min.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+
+    <link rel="stylesheet" href="monitoring.css">
+</head>
+
+<body class="hold-transition sidebar-mini layout-fixed">
+    <div class="wrapper">
+
+
+        <!-- Preloader -->
+        <div class="preloader flex-column justify-content-center align-items-center">
+            <img class="animation__shake" src="dist/img/AdminLTELogo.png" alt="AdminLTELogo" height="60" width="60">
+        </div>
+
+        <!-- Navbar -->
+        <nav class="main-header navbar navbar-expand navbar-white p-3">
+            <!-- Left navbar links -->
+            <ul class="navbar-nav">
+                <li class="nav-item ">
+                    <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
+                </li>
+                <li class="nav-item d-none d-md-inline-block">
+                    <a href="index.html" class="nav-link font-weight-bolder ml-3 text-black">MONITORING</a>
+                </li>
+
+            </ul>
+        </nav>
+        <!-- /.navbar -->
+
+        <!-- Main Sidebar Container -->
+        <aside class="main-sidebar sidebar-light-light">
+
+            <!-- Sidebar -->
+            <div class="sidebar p-0">
+                <div class="user-panel mt-3 pb-3 mb-3 d-flex" style="border-bottom: none;">
+                    <div class="info">
+                        <a href="#" class="d-flex " style="text-decoration: none; ">
+                            <img src="1.png" alt="">
+                            <h6 class="mt-3 ml-2" style="font-weight: bold;">Surabaya...</h6>
+                        </a>
+                    </div>
+                </div>
+
+
+
+                <nav class="mt-2">
+                    <ul class="nav nav-pills nav-sidebar ">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link " style="background-color: transparent; ">
+
+                                <span class="d-inline-block"><i class="mb-1"><svg fill="none" viewBox="0 0 15 15"
+                                            height="19" width="19" xmlns="http://www.w3.org/2000/svg" class="icon-menu">
+                                            <path class="d-flex mb-1" xmlns="http://www.w3.org/2000/svg"
+                                                d="M13.9286 15C14.5714 15 15 14.6256 15 14.064V5.63963C15 5.35881 14.8929 5.078 14.5714 4.8908L8.14286 0.210608C7.71429 -0.0702028 7.17857 -0.0702028 6.75 0.210608L0.321429 4.8908C0.107143 5.078 0 5.35881 0 5.63963V14.064C0 14.6256 0.428571 15 1.07143 15H5.35714V10.3198H9.64286V15H13.9286Z"
+                                                fill="#A0A5BA"></path>
+                                        </svg></i></span>
+                                <p class="">
+                                    monitoring
+                                </p>
+                            </a>
+                        </li>
+                </nav>
+            </div>
+        </aside>
+
+
+        <div class="content-wrapper" style="background-color: 
+        #F5F5F5;">
+            <div class="content-header">
+                <div class="container-fluid">
+                    <div class="row mb-1">
+                        <div class="container">
+                            <div class="row mb-2">
+                                <div class="col-md-3 mb-3 ">
+                                    <div class="card border-0 h-100">
+                                        <div class="card-body p-2">
+                                            <div class="row justify-content-start align-items-center h-100">
+                                                <div class="col-3"><img width="100%" src="Perpustakaan.png"
+                                                        alt="image icon" lazy="loading"></div>
+                                                <div class="col-9">
+                                                    <div class="row">
+                                                        <div class="col-3 ml-2 text-center"
+                                                            style="background-color: red;color: white; width: 100px; border-radius: 20px; ">
+                                                            <strong>SOON</strong>
+                                                        </div>
+                                                        <div class="col-12 text-muted">Tugas</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 mb-3 ">
+                                    <div class="card border-0 h-100">
+                                        <div class="card-body p-2">
+                                            <div class="row justify-content-start align-items-center h-100">
+                                                <div class="col-3"><img src="Perpustakaan.png" alt="image icon"
+                                                        lazy="loading" width="100%"></div>
+                                                <div class="col-9">
+                                                    <div class="row">
+                                                        <div class="col-12 h4 m-auto">160</div>
+                                                        <div class="col-12 text-muted">Peserta Didik</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 mb-3 ">
+                                    <div class="card border-0 h-100">
+                                        <div class="card-body p-2">
+                                            <div class="row justify-content-start align-items-center h-100">
+                                                <div class="col-3"><img src="Perpustakaan.png" alt="image icon"
+                                                        lazy="loading" width="100%"></div>
+                                                <div class="col-9">
+                                                    <div class="row">
+                                                        <div class="col-12 h4 m-auto">160</div>
+                                                        <div class="col-12 text-muted">Peserta Didik</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 mb-3 ">
+                                    <div class="card border-0 h-100">
+                                        <div class="card-body p-2">
+                                            <div class="row justify-content-start align-items-center h-100">
+                                                <div class="col-3"><img src="Perpustakaan.png" alt="image icon"
+                                                        lazy="loading" width="100%"></div>
+                                                <div class="col-9">
+                                                    <div class="row">
+                                                        <div class="col-12 h4 m-auto">160</div>
+                                                        <div class="col-12 text-muted">Peserta Didik</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <div class="container">
+                            <div class="row mb-2">
+                                <div class="col-md-3 mb-3 ">
+                                    <div class="card border-0 h-100">
+                                        <div class="card-body p-2">
+                                            <div class="row justify-content-start align-items-center h-100">
+                                                <div class="col-3"><img width="100%" src="Perpustakaan.png"
+                                                        alt="image icon" lazy="loading"></div>
+                                                <div class="col-9">
+                                                    <div class="row">
+                                                        <div class="col-3 ml-2 text-center"
+                                                            style="background-color: red;color: white; width: 100px; border-radius: 20px; ">
+                                                            <strong>SOON</strong>
+                                                        </div>
+                                                        <div class="col-12 text-muted">Tugas</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 mb-3 ">
+                                    <div class="card border-0 h-100">
+                                        <div class="card-body p-2">
+                                            <div class="row justify-content-start align-items-center h-100">
+                                                <div class="col-3"><img width="100%" src="Perpustakaan.png"
+                                                        alt="image icon" lazy="loading"></div>
+                                                <div class="col-9">
+                                                    <div class="row">
+                                                        <div class="col-3 ml-2 text-center"
+                                                            style="background-color: red;color: white; width: 100px; border-radius: 20px; ">
+                                                            <strong>SOON</strong>
+                                                        </div>
+                                                        <div class="col-12 text-muted">Tugas</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 mb-3 ">
+                                    <div class="card border-0 h-100">
+                                        <div class="card-body p-2">
+                                            <div class="row justify-content-start align-items-center h-100">
+                                                <div class="col-3"><img src="Perpustakaan.png" alt="image icon"
+                                                        lazy="loading" width="100%"></div>
+                                                <div class="col-9">
+                                                    <div class="row">
+                                                        <div class="col-12 h4 m-auto">160</div>
+                                                        <div class="col-12 text-muted">Peserta Didik</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 mb-3 ">
+                                    <div class="card border-0 h-100">
+                                        <div class="card-body p-2">
+                                            <div class="row justify-content-start align-items-center h-100">
+                                                <div class="col-3"><img src="Perpustakaan.png" alt="image icon"
+                                                        lazy="loading" width="100%"></div>
+                                                <div class="col-9">
+                                                    <div class="row">
+                                                        <div class="col-12 h4 m-auto">160</div>
+                                                        <div class="col-12 text-muted">Peserta Didik</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mb-2">
+                        <div class="container">
+                            <div class="card">
+                                <div class="card-body p-2">
+                                    <div class="row ">
+                                        <div class="col-md-12 d-flex align-items-center">
+                                            <div class="gambar">
+                                                <img src="1.png" style="width: 40; height: 40px;" alt="">
+                                                <span><strong>KEAKTIFAN SEKOLAH</strong></span>
+                                            </div>
+                                            <div class="refresh ml-auto"><a><span>
+                                                        Muat Ulang </span></a>
+                                                <button type="button" class="btn ml-1 bg-success"><i
+                                                        class="fas fa-sync-alt"></i></button>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row mb-2">
+                        <div class="container">
+                            <div class="card border-0 " style="height: 40px;">
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mb-2">
+                        <div class="container">
+                            <div class="card">
+                                <div class="card-body p-2">
+                                    <div class="row ">
+                                        <div class="col-md-12 d-flex align-items-center">
+                                            <div class="gambar">
+                                                <img src="https://dev.dindik.sicendol.id/img/PersebaranPeta.4a1b8a2a.png"
+                                                    style="width: 40; height: 40px;" alt="">
+                                                <span><strong>PERSEBARAN PETA</strong></span>
+                                            </div>
+                                            <div class="refresh ml-auto"><a><span>
+                                                        Muat Ulang </span></a>
+                                                <button type="button" class="btn ml-1 bg-success"><i
+                                                        class="fas fa-sync-alt"></i></button>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mb-2">
+                        <div class="container">
+                            <div class="card">
+                                <div class="card-body ">
+                                    <div class="row">
+                                        <div class="col-md-12 pb-2 mb-3">
+                                            <div
+                                                class="filter d-flex align-items-center mt-3 float-right text-muted w-100">
+                                                <div class="label font-weight-bold text-dark" style="font-size: 14px;">
+                                                    Peta Persebaran
+                                                </div>
+                                                <div class="form-check ml-auto ml-4"><input type="radio" id="location"
+                                                        value="location" class="form-check-input"><label for="location"
+                                                        class="form-check-label mt-1"> Lokasi
+                                                    </label>
+                                                </div>
+                                                <div class="form-check ml-4"><input type="radio" checked="checked"
+                                                        class="form-check-input"><label class="form-check-label mt-1">
+                                                        Guru
+                                                        per/Mapel </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <hr>
+                                    <div class="row ">
+                                        <div class="col-lg-12 align-content-center">
+                                            <iframe
+                                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d17931.271128023057!2d-122.4194152!3d37.7749295!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808f7e946d368ef1%3A0xd14c3d8ee481361!2sGolden%20Gate%20Bridge!5e0!3m2!1sen!2sus!4v1670668902581!5m2!1sen!2sus"
+                                                width="100%" height="400" style="border:0;" allowfullscreen=""
+                                                loading="lazy"></iframe>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /.content -->
+    </div>
+
+
+
+
+    <!-- /.content-wrapper -->
+    <footer class="main-footer">
+        <strong>Copyright &copy; 2020-2023 <a href="#">BukanAdminLTE.io</a>.</strong>
+        Gunakan Website ini dengan sebaik mungkin
+        <div class="float-right d-none d-sm-inline-block">
+            <b>Version</b> 3.2.0
+        </div>
+    </footer>
+
+    </div>
+
+    <!-- jQuery -->
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js"
+        integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa"
+        crossorigin="anonymous"></script>
+
+    <script src="plugins/jquery/jquery.min.js"></script>
+    <!-- jQuery UI 1.11.4 -->
+    <script src="plugins/jquery-ui/jquery-ui.min.js"></script>
+    <!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip -->
+    <script>
+        $.widget.bridge('uibutton', $.ui.button)
+    </script>
+    <!-- Bootstrap 4 -->
+    <script src="plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- ChartJS -->
+    <script src="plugins/chart.js/Chart.min.js"></script>
+    <!-- Sparkline -->
+    <script src="plugins/sparklines/sparkline.js"></script>
+    <!-- JQVMap -->
+    <script src="plugins/jqvmap/jquery.vmap.min.js"></script>
+    <script src="plugins/jqvmap/maps/jquery.vmap.usa.js"></script>
+    <!-- jQuery Knob Chart -->
+    <script src="plugins/jquery-knob/jquery.knob.min.js"></script>
+    <!-- daterangepicker -->
+    <script src="plugins/moment/moment.min.js"></script>
+    <script src="plugins/daterangepicker/daterangepicker.js"></script>
+    <!-- Tempusdominus Bootstrap 4 -->
+    <script src="plugins/tempusdominus-bootstrap-4/js/tempusdominus-bootstrap-4.min.js"></script>
+    <!-- Summernote -->
+    <script src="plugins/summernote/summernote-bs4.min.js"></script>
+    <!-- overlayScrollbars -->
+    <script src="plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js"></script>
+    <!-- AdminLTE App -->
+    <script src="dist/js/adminlte.js"></script>
+    <!-- AdminLTE for demo purposes -->
+    <script src="dist/js/demo.js"></script>
+    <!-- AdminLTE dashboard demo (This is only for demo purposes) -->
+    <script src="dist/js/pages/dashboard.js"></script>
+
+
+</body>
+
+</html>
